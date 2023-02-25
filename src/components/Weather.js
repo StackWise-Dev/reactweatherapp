@@ -20,7 +20,7 @@ export default function Weather() {
   useEffect(() => {
     async function getData() {
       let data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=422635aabcd517643f69a45207e4c3bf`
+        "weather token"
       );
       let jsonData = data.json();
       let wCondition = jsonData;
